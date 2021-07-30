@@ -1,0 +1,3 @@
+Assignment:
+    - concat a string and a variable together;
+    - output the result to the page and changing the inner html of a element. 
