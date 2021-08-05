@@ -18,12 +18,12 @@ function tipCalculator ( sum , tipPercent, people ) {
     return totalTip;
 };
 
-var total = tipCalculator(sum, people, tipPercent);
+var total = tipCalculator(sum,  tipPercent, people);
 
 if ( people = 1  ) {
-    document.getElementById("total").innerHTML = "The sum is " +total ;
+    document.getElementById("total").innerHTML = "The sum is " + (Math.round(total * 100) / 100).toFixed(2);
     
 } else {
-    document.getElementById("total").innerHTML = "The sum is" + total + "each.";
+    document.getElementById("total").innerHTML = "The sum is" + (Math.round(total * 100) / 100).toFixed(2) + "each.";
 }
 

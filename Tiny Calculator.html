@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny Calculator</title>
+</head>
+<body>
+    <h1>This is a simple example of Events and how they can change the page and store values.</h1>
+    <input type="number" class="format-control" style="padding: 30px; font-size: 30px; color:aquamarine; border: bisque 1px solid;">
+    <button class="btn btn-primary" style="background-color: blueviolet; color: brown;" onclick="calculate()">Add 100</button>
+
+    <h1>The total is: <span></span></h1>
+
+    <script>
+        var num = 100;
+        function calculate(){
+           var input = document.querySelector(".form-control");
+           var value = Numeber(input.value);
+           var totalValue = value + num;
+
+           var h1 = document.querySelectorAll("h1")[1];
+        //    select the h1 we want
+           var span = h1.querySelector("span");
+
+           span.innerHTML = totalValue
+        }
+    </script>
+</body>
+</html>
