@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css">
+    <link rel="stylesheet" href="calculator.css">
+
+    <title>Tip Calculator Project </title>
+</head>
+<body>
+
+    <!-- Title of page -->
+    <nav>
+        <h1 class="h-32 text-5xl text-center pt-10" >Tip Calculator Project </h1>
+    </nav>
+
+    <!-- Task -->
+    <div class="px-10 mx-auto my-5">
+        <div class="text-4xl mb-6">
+            Task: 
+        </div>
+        <ul class="list-disc list-inside">
+            <li> Create a simple tip calculator</li>
+            <li> It should have two input fields</li>
+            <li> Make a button that has a event and a js function that takes the two parameters (percent and bill ammount) and calculates the total ammount.</li>
+            <li> The total ammount will be displayed in a new box under the button</li>
+        </ul>
+    </div>
+
+    <!-- Solution -->
+    <div class="m-10 p-6 border-4 border-blue-100 border-solid ">
+        <div class="text-3xl">
+            Solution :
+        </div>
+        <div class="pt-3 px-auto">
+            <!-- Inputs -->
+            <div>
+                <label for="people">Nr of people is : 
+                    <input type="number" id="people" class=" mb-2 border-2 border-blue-100 border-solid rounded"> 
+                </label>
+            </div>   
+            <div>
+                <label for="tipPercent"> Tip % is : 
+                    <input type="number" id="tipPercent" class=" mb-2 border-2 border-blue-100 border-solid rounded">
+                </label>
+            </div> 
+            <div>    
+                <label for="bill"> Total bill is : 
+                    <input type="number" id="bill" class=" mb-2 border-2 border-blue-100 border-solid rounded">
+                </label>
+            </div>       
+  
+            <div  id="carl" >
+            <!-- Display after  -->
+                <div  class="pl-10" 
+                style=" width: 60%; display: inline-block;">
+                    <p id="total" style="display: none ;">Tip calculator for 
+                        <span id='nrPeople'></span> and a tip percentege of 
+                        <span id="tip"></span> % = <span id="totalBill"></span>  
+                    </p>
+                </div>
+                
+            <!-- button -->
+                <button class=" bg-red-300 font-medium text- border-2 border-red-400 border-solid
+                 rounded-lg p-3 hover:bg-red-400 hover:text-white"  
+                 style="width: 20%; display: inline-block;"
+                 onclick="calcTip()">Calculate Total</button>
+            </div>
+
+
+
+        </div>
+    </div>
+    <script src="calculator.js" type="text/javascript"></script>
+
+</body>
+
+</html>
