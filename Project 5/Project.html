@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css">
+    <link rel="stylesheet" href="Project.css">
 
     <title>Project 5</title>
 </head>
@@ -29,20 +30,22 @@
     </div>
 
     <!-- Solution -->
-    <div class="m-10 p-6 border-4 border-blue-100 border-solid ">
+    <div class="m-10 p-6 border-4 border-blue-100 border-solid " style="overflow: auto;">
         <div class="text-3xl">
             Solution :
         </div>
         <div class="pt-3">
-            <p>Tip calculator for <span id='nrPeople'></span> and a tip percentege of 
-                <span id="tip"></span> %. </p>
-            <div id="total" class="pl-10">
-                This is a simple div for now.
-            </div>
+                <label for="background" class="pb-5 "> Change the background color to:  </label>
+                <input type="text" id="background" class="border-2 border-blue-100 border-solid rounded-lg">
+            
+                <label for="textColor" class="pb-5 ">Change the text color to:</label>
+                <input type="text" id="textColor" class="border-2 border-blue-100 border-solid rounded-lg">  
 
+                <label for="font" class="pb-5 ">Change the font to: </label>
+                <input type="text" id="font" class="border-2 border-blue-100 border-solid rounded-lg">
         </div>
     </div>
-    <script src="Solution.js" type="text/javascript"></script>
+    <script src="Project.js" type="text/javascript"></script>
 
 </body>
 
