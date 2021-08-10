@@ -15,5 +15,4 @@ neofont.addEventListener('keyup',function(e){
     console.log(e. target.value);
     body.style.fontFamily = e.target.value;
     console.log("font is: ", body.style.fontFamily);
-
 })
